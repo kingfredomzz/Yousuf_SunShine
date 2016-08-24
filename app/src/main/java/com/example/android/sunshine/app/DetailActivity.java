@@ -126,7 +126,7 @@ public class DetailActivity extends ActionBarActivity {
             shareIntent.setType("text/plain");
             shareIntent.putExtra(Intent.EXTRA_TEXT,
                     mForecastStr + FORECAST_SHARE_HASHTAG);
-            
+
             return shareIntent;
         }
     }
