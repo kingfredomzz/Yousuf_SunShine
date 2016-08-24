@@ -30,6 +30,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class DetailActivity extends ActionBarActivity {
 
@@ -126,6 +127,7 @@ public class DetailActivity extends ActionBarActivity {
             shareIntent.setType("text/plain");
             shareIntent.putExtra(Intent.EXTRA_TEXT,
                     mForecastStr + FORECAST_SHARE_HASHTAG);
+            Toast.makeText(getActivity(), "FFF",Toast.LENGTH_SHORT).show();
             return shareIntent;
         }
     }
