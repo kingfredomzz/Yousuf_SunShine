@@ -16,11 +16,11 @@
 
 package com.example.android.sunshine.app;
 
-import android.support.v7.app.ActionBarActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.MenuItemCompat;
+import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.ShareActionProvider;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -30,7 +30,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class DetailActivity extends ActionBarActivity {
 
@@ -127,7 +126,7 @@ public class DetailActivity extends ActionBarActivity {
             shareIntent.setType("text/plain");
             shareIntent.putExtra(Intent.EXTRA_TEXT,
                     mForecastStr + FORECAST_SHARE_HASHTAG);
-            Toast.makeText(getActivity(), "FFF",Toast.LENGTH_SHORT).show();
+            
             return shareIntent;
         }
     }
